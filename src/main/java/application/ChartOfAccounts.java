@@ -35,7 +35,7 @@ public class ChartOfAccounts {
         database.printByAccountType("Liability");
 
 //        Print Equities
-        System.out.println("\nEQUITIES");
+        System.out.println("\nEQUITY");
         database.printByAccountType("Equity");
     }
 
