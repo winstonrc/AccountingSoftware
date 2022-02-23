@@ -166,7 +166,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Winston Cooke - Please message me via my email address on my [profile](https://github.com/winstoncooke)
 
-Project Link: [https://github.com/winstoncooke/AccountingSoftware](https://github.com/winstoncooke/AccountingSoftware-local)
+Project Link: [https://github.com/winstoncooke/AccountingSoftware-local](https://github.com/winstoncooke/AccountingSoftware-local)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
