@@ -119,20 +119,18 @@ public class ChartOfAccounts {
     }
 
 //    Perform double entry function for inputting a transaction
-    public void doubleEntry(int firstAccount, int secondAccount, double updateAmountInput) {
-        double firstUpdateAmount;
-        double secondUpdateAmount;
+    public void doubleEntry(int firstAccount, int secondAccount, double amount) {
+        String firstAccountType = database.getAccountType(firstAccount);
+        String secondAccountType = database.getAccountType(secondAccount);
+        double firstUpdateAmount = amount;
+        double secondUpdateAmount = amount;
 
-        if (database.getAccountType(firstAccount).equals("Asset")) {
-            firstUpdateAmount = updateAmountInput;
-        } else {
-            firstUpdateAmount = -1.0 * updateAmountInput;
+        if (!firstAccountType.equals("Asset") && !firstAccountType.equals("Expense")) {
+            firstUpdateAmount *= -1.0;
         }
 
-        if (database.getAccountType(secondAccount).equals("Asset")) {
-            secondUpdateAmount = -1.0 * updateAmountInput;
-        } else {
-            secondUpdateAmount = updateAmountInput;
+        if (secondAccountType.equals("Asset") || secondAccountType.equals("Expense")) {
+            secondUpdateAmount *= -1.0;
         }
 
         updateBalance(firstAccount, firstUpdateAmount);
