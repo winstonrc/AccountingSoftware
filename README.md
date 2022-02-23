@@ -18,14 +18,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/winstoncooke/AccountingSoftware">
+  <a href="https://github.com/winstoncooke/AccountingSoftware-local">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">AccountingSoftware</h3>
+<h3 align="center">AccountingSoftware-local</h3>
 
   <p align="center">
-    <a href="https://github.com/winstoncooke/AccountingSoftware/issues">Report Bug / Request Feature</a>
+    <a href="https://github.com/winstoncooke/AccountingSoftware-local/issues">Report Bug / Request Feature</a>
   </p>
 </div>
 
@@ -61,7 +61,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="https://github.com/winstoncooke/AccountingSoftware/blob/main/images/screenshot.png" width=45% height=45%>
+<img src="https://github.com/winstoncooke/AccountingSoftware-local/blob/main/images/screenshot.png" width=45% height=45%>
 
 This program is designed to be a simple terminal/backend bookkeeping software. Currently, it allows for accounts to be created and added to a master Chart of Accounts. The accounts can have their balances updated using double entry accounting methods. The aim for the project is to be a lightweight, open-source, double-entry bookkeeping program for small organizations to utilize in lieue of more frustrating software such as QuickBooks.
 
@@ -94,7 +94,7 @@ Please alert me if that is not the case!
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/winstoncooke/AccountingSoftware.git
+   git clone https://github.com/winstoncooke/AccountingSoftware-local.git
    ```
 2. Compile the program
    ```sh
@@ -130,7 +130,7 @@ Safeguards have been put in place to prevent the books from accidentally becomin
 - [ ] Add multi-line entry functionality
 - [ ] Add GUI
 
-See the [open issues](https://github.com/winstoncooke/AccountingSoftware/issues?q=is:open+is:issue) section for a full list of proposed features and known issues.
+See the [open issues](https://github.com/winstoncooke/AccountingSoftware-local/issues?q=is:open+is:issue) section for a full list of proposed features and known issues.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -166,7 +166,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Winston Cooke - Please message me via my email address on my [profile](https://github.com/winstoncooke)
 
-Project Link: [https://github.com/winstoncooke/AccountingSoftware](https://github.com/winstoncooke/AccountingSoftware)
+Project Link: [https://github.com/winstoncooke/AccountingSoftware](https://github.com/winstoncooke/AccountingSoftware-local)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -185,16 +185,16 @@ Project Link: [https://github.com/winstoncooke/AccountingSoftware](https://githu
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/winstoncooke/AccountingSoftware.svg?style=for-the-badge
-[contributors-url]: https://github.com/winstoncooke/AccountingSoftware/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/winstoncooke/AccountingSoftware.svg?style=for-the-badge
-[forks-url]: https://github.com/winstoncooke/AccountingSoftware/network/members
-[stars-shield]: https://img.shields.io/github/stars/winstoncooke/AccountingSoftware.svg?style=for-the-badge
-[stars-url]: https://github.com/winstoncooke/AccountingSoftware/stargazers
-[issues-shield]: https://img.shields.io/github/issues/winstoncooke/AccountingSoftware.svg?style=for-the-badge
-[issues-url]: https://github.com/winstoncooke/AccountingSoftware/issues
-[license-shield]: https://img.shields.io/github/license/winstoncooke/AccountingSoftware.svg?style=for-the-badge
-[license-url]: https://github.com/winstoncooke/AccountingSoftware/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/winstoncooke/AccountingSoftware-local.svg?style=for-the-badge
+[contributors-url]: https://github.com/winstoncooke/AccountingSoftware-local/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/winstoncooke/AccountingSoftware-local.svg?style=for-the-badge
+[forks-url]: https://github.com/winstoncooke/AccountingSoftware-local/network/members
+[stars-shield]: https://img.shields.io/github/stars/winstoncooke/AccountingSoftware-local.svg?style=for-the-badge
+[stars-url]: https://github.com/winstoncooke/AccountingSoftware-local/stargazers
+[issues-shield]: https://img.shields.io/github/issues/winstoncooke/AccountingSoftware-local.svg?style=for-the-badge
+[issues-url]: https://github.com/winstoncooke/AccountingSoftware-local/issues
+[license-shield]: https://img.shields.io/github/license/winstoncooke/AccountingSoftware-local.svg?style=for-the-badge
+[license-url]: https://github.com/winstoncooke/AccountingSoftware-local/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
