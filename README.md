@@ -75,6 +75,7 @@ Any feedback in making this program a more viable tool is welcomed and would be 
 
 * [Java](https://www.java.com/)
 * [SQLite](https://sqlite.org/)
+* [JUnit 5](https://junit.org/junit5/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -92,17 +93,11 @@ Please alert me if that is not the case!
 
 ### Installation
 
-1. Clone the repo
+1. Download the [latest release](https://github.com/winstoncooke/AccountingSoftware/releases)
+
+2. Run the program
    ```sh
-   git clone https://github.com/winstoncooke/AccountingSoftware.git
-   ```
-2. Compile the program
-   ```sh
-   javac src/main/java/application/Main.java
-   ```
-3. Launch the program
-   ```sh
-   java src/main/java/application/Main.java
+   java -jar accounting-software-0.0.1-SNAPSHOT.jar
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
