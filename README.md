@@ -97,7 +97,7 @@ Please alert me if that is not the case!
 
 2. Run the program
    ```sh
-   java -jar accounting-software-0.0.1-SNAPSHOT.jar
+   java -jar AccountingSoftware-1.0-SNAPSHOT.jar
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
