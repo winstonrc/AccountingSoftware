@@ -88,8 +88,8 @@ To get a local copy up and running, perform the following steps:
 
 ### Prerequisites
 
-Java is the only thing needed to run the program.
-Please alert me if that is not the case!
+- Java 17
+- SQLite
 
 ### Installation
 
