@@ -113,7 +113,9 @@ The program allows for the following:
 - Input a double-entry transaction to update account balances
 - Remove an account (with a balance of zero)
 
-Safeguards have been put in place to prevent the books from accidentally becoming unbalanced. This includes only allowing a matching balance to be added to each account in the double entry input as well as preventing accounts from being deleted while still carrying a balance. In the future, I aim to add multi-line entry functionality to enable partial amounts on one side of the transaction that sum to the total amount on the other side to be entered. Currently, the best way to achieve this would be to initially debit and credit the relevant accounts and then debit and credit the additional accounts against the original accounts until the balances are appropriate.
+Safeguards have been put in place to prevent the books from accidentally becoming unbalanced. This includes only allowing a matching balance to be added to each account in the double entry input as well as preventing accounts from being deleted while still carrying a balance.
+
+In the future, I aim to add multi-line entry functionality to enable partial amounts on one side of the transaction that sum to the total amount on the other side to be entered. Currently, the best way to achieve this would be to initially debit and credit the relevant accounts and then debit and credit the additional accounts against the original accounts until the balances are appropriate.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
