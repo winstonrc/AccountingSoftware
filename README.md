@@ -109,7 +109,7 @@ To get a local copy up and running, perform the following steps:
 
 The program allows for the following:
 - View the Chart of Accounts, which lists all created accounts and their respective balances, listed by account number
-- Create an Asset, Liability, or Equity account
+- Create an Asset, Liability, Equity, Revenue, or Expense account
 - Input a double-entry transaction to update account balances
 - Remove an account (with a balance of zero)
 
