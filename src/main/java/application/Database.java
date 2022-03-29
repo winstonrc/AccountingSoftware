@@ -135,7 +135,7 @@ public class Database {
         }
     }
 
-    // Returns a list of accounts based on type (Asset, Liability, or Equity)
+    // Returns a list of accounts based on type (Asset, Liability, Equity, Revenue, or Expense)
     public ArrayList<Account> selectByAccountType(String type) {
         ArrayList<Account> accounts = new ArrayList<>();
         String sql = "SELECT accountNumber, name, balance, type FROM account WHERE type = '" + type + "'";
@@ -187,6 +187,8 @@ public class Database {
         accounts.addAll(selectByAccountType("Asset"));
         accounts.addAll(selectByAccountType("Liability"));
         accounts.addAll(selectByAccountType("Equity"));
+        accounts.addAll(selectByAccountType("Revenue"));
+        accounts.addAll(selectByAccountType("Expense"));
 
         return accounts;
     }

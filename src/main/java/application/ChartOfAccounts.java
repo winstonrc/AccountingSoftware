@@ -10,6 +10,8 @@ public class ChartOfAccounts {
     private int assetAccountNumber;
     private int liabilityAccountNumber;
     private int equityAccountNumber;
+    private int revenueAccountNumber;
+    private int expenseAccountNumber;
 
     public ChartOfAccounts(Database database) {
         this.df = (DecimalFormat) DecimalFormat.getInstance();
@@ -20,23 +22,33 @@ public class ChartOfAccounts {
         this.assetAccountNumber = 1000;
         this.liabilityAccountNumber = 2000;
         this.equityAccountNumber = 3000;
+        this.revenueAccountNumber = 4000;
+        this.expenseAccountNumber = 5000;
     }
 
 //    Print a formatted and comprehensive Chart of Accounts REMOVE
     public void printChartOfAccounts() {
         System.out.println("* Chart of Accounts *");
 
-//        Print Assets
+//        Print Asset accounts
         System.out.println("\nASSETS");
         database.printByAccountType("Asset");
 
-//        Print Liabilities
+//        Print Liability accounts
         System.out.println("\nLIABILITIES");
         database.printByAccountType("Liability");
 
-//        Print Equities
+//        Print Equity accounts
         System.out.println("\nEQUITY");
         database.printByAccountType("Equity");
+
+//        Print Revenue accounts
+        System.out.println("\nREVENUES");
+        database.printByAccountType("Revenue");
+
+//        Print Expense accounts
+        System.out.println("\nEXPENSES");
+        database.printByAccountType("Expense");
     }
 
 //    Search a hash map of all accounts and return true if found
@@ -91,6 +103,38 @@ public class ChartOfAccounts {
             } else {
                 System.out.println("ERROR: Too many Equity accounts already exist.");
                 System.out.println("Please delete an Equity account before adding a new one.");
+            }
+        }
+
+//        Add Revenue account
+        if (accountType.equals("Revenue")) {
+            if (database.checkIfTableIsEmpty("Revenue")) {
+                revenueAccountNumber = database.getLastAccountNumber("Revenue") + 10;
+
+            }
+
+            if (revenueAccountNumber < 5000 && checkDuplicateAccount(name)) {
+                database.createAccount(revenueAccountNumber, name, accountType);
+                displayAccountAddedMessage(revenueAccountNumber);
+            } else {
+                System.out.println("ERROR: Too many Revenue accounts already exist.");
+                System.out.println("Please delete a Revenue account before adding a new one.");
+            }
+        }
+
+//        Add Expense account
+        if (accountType.equals("Expense")) {
+            if (database.checkIfTableIsEmpty("Expense")) {
+                expenseAccountNumber = database.getLastAccountNumber("Expense") + 10;
+
+            }
+
+            if (expenseAccountNumber < 6000 && checkDuplicateAccount(name)) {
+                database.createAccount(expenseAccountNumber, name, accountType);
+                displayAccountAddedMessage(expenseAccountNumber);
+            } else {
+                System.out.println("ERROR: Too many Expense accounts already exist.");
+                System.out.println("Please delete an Expense account before adding a new one.");
             }
         }
     }

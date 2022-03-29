@@ -81,6 +81,8 @@ public class UI {
             System.out.println("1. Asset");
             System.out.println("2. Liability");
             System.out.println("3. Equity");
+            System.out.println("4. Revenue");
+            System.out.println("5. Expense");
             System.out.print("\n> ");
             int input = Integer.parseInt(scanner.nextLine());
 
@@ -90,16 +92,16 @@ public class UI {
                 type = "Liability";
             } else if (input == 3) {
                 type = "Equity";
+            } else if (input == 4) {
+                type = "Revenue";
+            } else if (input == 5) {
+                type = "Expense";
             } else {
                 System.out.println("\nERROR: Please choose a valid account type\n");
             }
 
-            if (type.equals("Asset") ||
-                type.equals("Liability") ||
-                type.equals("Equity")) {
-                chartOfAccounts.add(name, type);
-                validType = true;
-            }
+            chartOfAccounts.add(name, type);
+            validType = true;
         }
     }
 
