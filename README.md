@@ -97,7 +97,7 @@ To get a local copy up and running, perform the following steps:
 
 2. Run the program
    ```sh
-   java -jar AccountingSoftware-1.0-SNAPSHOT.jar
+   java -jar AccountingSoftware-1.1-SNAPSHOT.jar
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
